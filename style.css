@@ -17,7 +17,7 @@ body {
 
 body {
 	background: url(./images/ring.jpg);
-	background-size: cover;
+
 	background-position: bottom right;
 	/* color: white; */
 }
@@ -38,7 +38,7 @@ h1 {
 	background: linear-gradient(90deg, var(--indigo-dye) 0%, var(--lapis-lazuli) 35%, var(--cerulean) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	font-size: 5em;
+	font-size: 3em;
 	margin-bottom: .25rem;
 	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -55,8 +55,6 @@ h6 {
 
 .wrapper {
 	min-height: 100vh;
-	display: grid;
-	place-items: center;
 	text-align: center;
 }
 
@@ -79,9 +77,30 @@ h6 {
 	font-size: 1.5em;
 	margin: 0 0 2rem 0;
 	font-family: work-sans, sans-serif;
-font-weight: 200;
-font-style: normal;
+	font-weight: 200;
+		font-style: normal;
+}
 
-	/* font-style: italic; */
+.text-content {
+	margin-top: 6em;
+}
 
+@media (min-width: 768px) {
+	.text-content {
+		max-width: 600px;
+		margin: 0 auto;
+	}
+
+		h1 {
+			font-size: 5em;
+		}
+	
+		body {
+			background-size: cover;
+		}
+	
+		.wrapper {
+			display: grid;
+			place-items: center;
+		}
 }
