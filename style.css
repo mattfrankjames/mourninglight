@@ -61,7 +61,7 @@ h6 {
 }
 
 .primary-cta {
-	border: 1px solid;
+	border: .5px solid;
 	background: var(--platinum);
 	color: inherit;
 	padding: .5em 1em;
@@ -69,7 +69,6 @@ h6 {
 	border-radius: 15px;
 	text-decoration: none;
 	display: inline-block;
-	font-family: ;
 	:hover {
 		background: var(--platinum);
 	}
