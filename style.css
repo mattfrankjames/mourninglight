@@ -12,7 +12,9 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	min-height: 100svh;
-	font-family: open-sans, sans-serif;
+	font-family: work-sans, sans-serif;
+		font-weight: 300;
+		color: var(--indigo-dye)
 }
 
 body {
@@ -40,7 +42,7 @@ h1 {
 	-webkit-text-fill-color: transparent;
 	font-size: 3em;
 	margin-bottom: .25rem;
-	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+	/* text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1); */
 }
 
 h1,
@@ -67,7 +69,7 @@ h6 {
 	border-radius: 15px;
 	text-decoration: none;
 	display: inline-block;
-
+	font-family: ;
 	:hover {
 		background: var(--platinum);
 	}
@@ -94,11 +96,11 @@ h6 {
 		h1 {
 			font-size: 5em;
 		}
-	
+
 		body {
 			background-size: cover;
 		}
-	
+
 		.wrapper {
 			display: grid;
 			place-items: center;
