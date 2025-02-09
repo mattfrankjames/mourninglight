@@ -1,0 +1,87 @@
+:root {
+	--lapis-lazuli: hsla(206, 51%, 37%, 1);
+	--cerulean: hsla(203, 48%, 44%, 1);
+	--platinum: hsla(90, 8%, 85%, 1);
+	--indigo-dye: hsla(202, 61%, 22%, 1);
+	--sky-blue: hsla(194, 52%, 67%, 1);
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	min-height: 100svh;
+	font-family: open-sans, sans-serif;
+}
+
+body {
+	background: url(./images/ring.jpg);
+	background-size: cover;
+	background-position: bottom right;
+	/* color: white; */
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+h1 {
+	color: transparent;
+	background: linear-gradient(90deg, var(--indigo-dye) 0%, var(--lapis-lazuli) 35%, var(--cerulean) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 5em;
+	margin-bottom: .25rem;
+	text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-top: 0;
+	font-family: campaign-serif, serif;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	text-align: center;
+}
+
+.primary-cta {
+	border: 1px solid;
+	background: var(--platinum);
+	color: inherit;
+	padding: .5em 1em;
+	font-size: inherit;
+	border-radius: 15px;
+	text-decoration: none;
+	display: inline-block;
+
+	:hover {
+		background: var(--platinum);
+	}
+}
+
+.callout-text {
+	font-size: 1.5em;
+	margin: 0 0 2rem 0;
+	font-family: work-sans, sans-serif;
+font-weight: 200;
+font-style: normal;
+
+	/* font-style: italic; */
+
+}
